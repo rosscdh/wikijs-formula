@@ -8,6 +8,6 @@ wikijs-docker-container:
     - port_bindings:
       - 3000
     - environment:
-      {%- for key, value in docker_env.iteritems() %}
+      {%- for key, value in docker_env.items() %}
       - {{ key }}={{ value }}
       {%- endfor %}
