@@ -1,4 +1,4 @@
-{% from "cron_email_backup_fail_check/map.jinja" import config with context %}
+{% from "wikijs/map.jinja" import config with context %}
 {% set docker_env = config['docker_env'] %}
 
 
