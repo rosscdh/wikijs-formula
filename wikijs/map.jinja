@@ -1,0 +1,2 @@
+{% import_yaml 'wikijs/config/defaults.yaml' as preconfig %}
+{% set config = salt.pillar.get( 'wikijs', default=preconfig.wikijs, merge=True ) %}
