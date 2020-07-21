@@ -1,6 +1,11 @@
+#!yaml|gpg
+
 wikijs:
-  your: mother
-  is:
-  - fat
-  - old 
-  
+  image: requarks/wiki:2
+  docker_env:
+    DB_TYPE: postgres
+    DB_HOST: db
+    DB_PORT: 5432
+    DB_NAME: wiki
+    DB_USER: wikijs
+    DB_PASS: password
