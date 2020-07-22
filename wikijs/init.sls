@@ -12,7 +12,7 @@ wikijs-docker-container:
   docker_container.running:
     - image: {{ config['image'] }}
     - port_bindings:
-      - 3000
+      - 80:3000
     - networks:
       - wikijs-net
     - environment:
