@@ -11,5 +11,5 @@ wikijs-docker-container:
       {%- for key, value in docker_env.items() %}
       - {{ key }}={{ value }}
       {%- endfor %}
-    - networks:
-      - bridge
+    - binds:
+      - /var/run/postgresql:/var/run/postgresql
