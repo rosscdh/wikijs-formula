@@ -19,5 +19,7 @@ wikijs-docker-container:
       {%- for key, value in docker_env.items() %}
       - {{ key }}={{ value }}
       {%- endfor %}
+    - binds:
+      - /var/run/postgresql:/var/run/postgresql
     - require:
       - docker_network: wikijs-net
