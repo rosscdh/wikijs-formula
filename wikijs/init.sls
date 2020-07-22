@@ -13,7 +13,11 @@ wikijs-docker-container:
     - image: {{ config['image'] }}
     - port_bindings:
       - 3000
+    - networks:
+      - wikijs-net
     - environment:
       {%- for key, value in docker_env.items() %}
       - {{ key }}={{ value }}
       {%- endfor %}
+    - require:
+      - docker_network: wikijs-net
