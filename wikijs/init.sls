@@ -1,7 +1,7 @@
 {% from "wikijs/map.jinja" import config with context %}
 {% set docker_env = config['docker_env'] %}
 
-wikijs-net
+wikijs-net:
   docker_network.present:
   - driver: bridge
   - containers:
