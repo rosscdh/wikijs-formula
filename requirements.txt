@@ -13,10 +13,9 @@ MarkupSafe
 pluggy
 poyo
 py
-pytest
-pytest
-pytest
-python
+pytest-html
+pytest-metadata
+python-dateutil
 requests
 six
 testinfra
